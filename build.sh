@@ -311,16 +311,16 @@ usage()
 {
 	echo "================================"
 	echo "Usage:"
-	echo " ./build.sh rsa/ecc  gen_ca                # generate CA keys and certs"
-	echo " ./build.sh rsa/ecc  gen_subca             # generate Sub CA keys and certs (implying: gen_ca)"
-	echo " ./build.sh rsa/ecc  server wwww.test.com  # generate Server certs with CommonName: www.test.com (signed with CA if no subCA)"
-	echo " ./build.sh rsa/ecc  client Client1        # generate client certs with CommonName: Client1 (signed with CA if no subCA)"
+	echo " ./build.sh rsa/ecc gen_ca              # generate CA keys and certs"
+	echo " ./build.sh rsa/ecc gen_subca           # generate Sub CA keys and certs (implying: gen_ca)"
+	echo " ./build.sh rsa/ecc server test.com     # generate Server certs with CommonName: test.com (signed with CA if no subCA)"
+	echo " ./build.sh rsa/ecc client Client1      # generate client certs with CommonName: Client1 (signed with CA if no subCA)"
 	echo ""
-	echo " ./build.sh rsa/ecc  test_server           # generate a test server cert and run openssl s_server on 127.0.0.1:8443"
-	echo " ./build.sh rsa/ecc  test_client           # generate a test client cert and run openssl s_client connecting 127.0.0.1:8443"
-	echo " ./build.sh verify   	                     # verify every cert in ./server/*.crt and ./client/*.crt"
-	echo " ./build.sh clean                          # delete everything, including root-ca and sub-ca dirs"
-	echo " ./build.sh help                           # show this help"
+	echo " ./build.sh rsa/ecc test_server         # generate a test server cert and run openssl s_server on 127.0.0.1:8443"
+	echo " ./build.sh rsa/ecc test_client         # generate a test client cert and run openssl s_client connecting 127.0.0.1:8443"
+	echo " ./build.sh verify                      # verify every cert in ./server/*.crt and ./client/*.crt"
+	echo " ./build.sh clean                       # delete everything, including root-ca and sub-ca dirs"
+	echo " ./build.sh help                        # show this help"
 }
 
 help()
