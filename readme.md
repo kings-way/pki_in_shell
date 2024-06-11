@@ -1,4 +1,4 @@
-## Simple shell script to create certs (RSA or SM2)
+## Simple shell script to create certs (RSA or ECC, including SM2)
 
 ----
 
